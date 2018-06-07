@@ -54,6 +54,8 @@ public class NPC {
 	private int cmb;
 	private int cmd;
 	
+	private boolean useDexForMelee = false;
+	
 	public NPC(CoreRace coreRace, CoreClass coreClass) {
 		this.coreClass = coreClass;
 		this.coreRace = coreRace;
@@ -138,7 +140,12 @@ public class NPC {
 		statBlock += "WILL:" + willSave + ", ";
 		statBlock += "\n";
 		statBlock += "Initiative:" + init + "\n";
-		statBlock += "Melee Attack Bonus:" + (coreClass.getBab() + strengthMod + acSizeBonus) + "\n";
+		if (useDexForMelee) {
+			statBlock += "Melee Attack Bonus (Str):" + (coreClass.getBab() + strengthMod + acSizeBonus) + "\n";
+			statBlock += "Melee Attack Bonus (Dex):" + (coreClass.getBab() + dexterityMod + acSizeBonus) + "\n";
+		} else {
+			statBlock += "Melee Attack Bonus:" + (coreClass.getBab() + strengthMod + acSizeBonus) + "\n";
+		}
 		statBlock += "Ranged Attack Bonus:" + (coreClass.getBab() + dexterityMod + acSizeBonus) + "\n";
 		statBlock += "CMB:" + cmb + "\n";
 		statBlock += "CMD:" + cmd + "\n";
@@ -392,6 +399,14 @@ public class NPC {
 	
 	public void setInit(int init) {
 		this.init = init;
+	}
+	
+	public boolean isUseDexForMelee() {
+		return useDexForMelee;
+	}
+	
+	public void setUseDexForMelee(boolean useDexForMelee) {
+		this.useDexForMelee = useDexForMelee;
 	}
 	
 }

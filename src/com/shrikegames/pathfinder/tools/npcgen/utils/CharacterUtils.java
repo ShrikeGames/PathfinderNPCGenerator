@@ -18,12 +18,22 @@ import com.shrikegames.pathfinder.tools.coreraces.HalfOrc;
 import com.shrikegames.pathfinder.tools.coreraces.Halfling;
 import com.shrikegames.pathfinder.tools.coreraces.Human;
 import com.shrikegames.pathfinder.tools.coreraces.Orc;
+import com.shrikegames.pathfinder.tools.feats.BlindFight;
+import com.shrikegames.pathfinder.tools.feats.Bludgeoner;
+import com.shrikegames.pathfinder.tools.feats.CatchOffGuard;
+import com.shrikegames.pathfinder.tools.feats.CombatReflexes;
+import com.shrikegames.pathfinder.tools.feats.DeathFromAbove;
 import com.shrikegames.pathfinder.tools.feats.Feat;
 import com.shrikegames.pathfinder.tools.feats.GreatFortitude;
 import com.shrikegames.pathfinder.tools.feats.ImprovedInitiative;
+import com.shrikegames.pathfinder.tools.feats.ImprovedUnarmedStrike;
 import com.shrikegames.pathfinder.tools.feats.IronWill;
 import com.shrikegames.pathfinder.tools.feats.LightningReflexes;
+import com.shrikegames.pathfinder.tools.feats.PointBlankShot;
+import com.shrikegames.pathfinder.tools.feats.ProneSlinger;
+import com.shrikegames.pathfinder.tools.feats.ThrowAnything;
 import com.shrikegames.pathfinder.tools.feats.Toughness;
+import com.shrikegames.pathfinder.tools.feats.WeaponFinesse;
 
 public class CharacterUtils {
 	private static ArrayList<CoreClass> coreClasses = new ArrayList<CoreClass>();
@@ -54,6 +64,16 @@ public class CharacterUtils {
 		feats.add(new LightningReflexes());
 		feats.add(new IronWill());
 		feats.add(new ImprovedInitiative());
+		feats.add(new BlindFight());
+		feats.add(new Bludgeoner());
+		feats.add(new CatchOffGuard());
+		feats.add(new CombatReflexes());
+		feats.add(new DeathFromAbove());
+		feats.add(new ImprovedUnarmedStrike());
+		feats.add(new PointBlankShot());
+		feats.add(new ProneSlinger());
+		feats.add(new ThrowAnything());
+		feats.add(new WeaponFinesse());
 	}
 	
 	private static void initCoreClasses() {
