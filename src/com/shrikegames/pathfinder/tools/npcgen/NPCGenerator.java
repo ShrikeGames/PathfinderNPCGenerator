@@ -4,8 +4,6 @@ import com.shrikegames.pathfinder.tools.npcgen.utils.CharacterUtils;
 
 public class NPCGenerator {
 	/**
-	 * TODO skill points, profession, weapons, traits + flaws, armor, items TODO
-	 * assign random names and descriptions
 	 * 
 	 * @param args
 	 */

@@ -20,6 +20,7 @@ import com.shrikegames.pathfinder.tools.coreraces.Human;
 import com.shrikegames.pathfinder.tools.coreraces.Orc;
 import com.shrikegames.pathfinder.tools.feats.Feat;
 import com.shrikegames.pathfinder.tools.feats.GreatFortitude;
+import com.shrikegames.pathfinder.tools.feats.ImprovedInitiative;
 import com.shrikegames.pathfinder.tools.feats.IronWill;
 import com.shrikegames.pathfinder.tools.feats.LightningReflexes;
 import com.shrikegames.pathfinder.tools.feats.Toughness;
@@ -52,6 +53,7 @@ public class CharacterUtils {
 		feats.add(new GreatFortitude());
 		feats.add(new LightningReflexes());
 		feats.add(new IronWill());
+		feats.add(new ImprovedInitiative());
 	}
 	
 	private static void initCoreClasses() {

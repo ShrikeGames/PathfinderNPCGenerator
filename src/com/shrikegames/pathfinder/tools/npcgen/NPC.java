@@ -49,6 +49,8 @@ public class NPC {
 	private int acDeflectBonus;
 	private int acOtherBonus;
 	
+	private int init;
+	
 	private int cmb;
 	private int cmd;
 	
@@ -83,6 +85,7 @@ public class NPC {
 		refSave = coreClass.getRefSave() + dexterityMod;
 		willSave = coreClass.getWillSave() + wisdomMod;
 		
+		init = dexterityMod;
 		acArmorBonus = 0;
 		acShieldBonus = 0;
 		acSizeBonus = 0;
@@ -108,6 +111,7 @@ public class NPC {
 		flatAC = 10 + acArmorBonus + acShieldBonus + acSizeBonus + acDeflectBonus + acOtherBonus;
 		cmb = 0 + coreClass.getBab() - acSizeBonus + strengthMod;
 		cmd = 10 + coreClass.getBab() - acSizeBonus + dexterityMod + strengthMod;
+		
 	}
 	
 	public String toString() {
@@ -133,7 +137,7 @@ public class NPC {
 		statBlock += "REF:" + refSave + ", ";
 		statBlock += "WILL:" + willSave + ", ";
 		statBlock += "\n";
-		
+		statBlock += "Initiative:" + init + "\n";
 		statBlock += "Melee Attack Bonus:" + (coreClass.getBab() + strengthMod + acSizeBonus) + "\n";
 		statBlock += "Ranged Attack Bonus:" + (coreClass.getBab() + dexterityMod + acSizeBonus) + "\n";
 		statBlock += "CMB:" + cmb + "\n";
@@ -380,6 +384,14 @@ public class NPC {
 	
 	public ArrayList<Feat> getFeats() {
 		return feats;
+	}
+	
+	public int getInit() {
+		return init;
+	}
+	
+	public void setInit(int init) {
+		this.init = init;
 	}
 	
 }
