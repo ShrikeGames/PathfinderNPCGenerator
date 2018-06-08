@@ -6,7 +6,7 @@ This is just meant to be a quick, dirty and functional implementation. There's a
 * There are 9 races you can get: Dwarf, Elf, Gnome, Goblin, Half-Elf, Half-Orc, Human, Orc
 * Each character gets a drawback! There are lots of them.
 * Assigns random feats (from a very small list)
-* Facial traits that always apply are applied to the character sheet
+* Racial traits that always apply are applied to the character sheet
 * Random names, genders, heights and weights according to the regular old boring random tables (with room to add whatever we want).
 
 Drunk Pathfinder Rules!

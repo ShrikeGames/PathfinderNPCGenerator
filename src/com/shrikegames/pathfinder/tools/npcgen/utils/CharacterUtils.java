@@ -34,6 +34,7 @@ import com.shrikegames.pathfinder.tools.feats.ProneSlinger;
 import com.shrikegames.pathfinder.tools.feats.ThrowAnything;
 import com.shrikegames.pathfinder.tools.feats.Toughness;
 import com.shrikegames.pathfinder.tools.feats.WeaponFinesse;
+import com.shrikegames.pathfinder.tools.npcgen.Alignment;
 
 public class CharacterUtils {
 	private static ArrayList<CoreClass> coreClasses = new ArrayList<CoreClass>();
@@ -195,5 +196,10 @@ public class CharacterUtils {
 			weight += DiceUtils.random(1, diceSize) * multiplier;
 		}
 		return weight + " lbs.";
+	}
+	
+	public static Alignment randomAlignment() {
+		int random = (int) (Math.random() * Alignment.values().length);
+		return Alignment.values()[random];
 	}
 }

@@ -10,6 +10,7 @@ import com.shrikegames.pathfinder.tools.npcgen.utils.CharacterUtils;
 import com.shrikegames.pathfinder.tools.npcgen.utils.DiceUtils;
 
 public class NPC {
+	private Alignment alignment;
 	private String firstName;
 	private String lastName;
 	private String gender;
@@ -60,7 +61,7 @@ public class NPC {
 		this.coreClass = coreClass;
 		this.coreRace = coreRace;
 		gender = CharacterUtils.randomGender();
-		
+		alignment = CharacterUtils.randomAlignment();
 		firstName = coreRace.getFirstName(gender);
 		lastName = coreRace.getLastName(gender);
 		height = coreRace.getRandomHeight(gender);
@@ -117,7 +118,7 @@ public class NPC {
 	}
 	
 	public String toString() {
-		String statBlock = firstName + " " + lastName + "\n";
+		String statBlock = firstName + " " + lastName + " (" + alignment + ")" + "\n";
 		statBlock += "Gender:" + gender + "\n";
 		statBlock += "Race:" + coreRace.getName() + "\n";
 		statBlock += "Height:" + height + "\n";
