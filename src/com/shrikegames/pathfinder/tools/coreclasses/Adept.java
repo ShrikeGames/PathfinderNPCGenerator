@@ -3,9 +3,9 @@ package com.shrikegames.pathfinder.tools.coreclasses;
 import com.shrikegames.pathfinder.tools.npcgen.utils.DiceUtils;
 
 public class Adept extends CoreClass {
-	private String[] availableCantrips = new String[] { "create water", "detect magic", "ghost sound", "guidance", "light", "mending", "purify food and drink", "read magic", "stabilize", "touch of fatigue" };
-	private String[] availableFirstLevelSpells = new String[] { "bless", "burning hands", "cause fear", "command", "comprehend languages", "cure light wounds", "detect chaos", "detect evil", "detect good", "detect law", "endure elements",
-			"obscuring mist", "protection from chaos", "protection from evil", "protection from good", "protection from law", "sleep" };
+	private String[] availableCantrips = new String[] { "Create water", "Detect magic", "Ghost sound", "Guidance", "Light", "Mending", "Purify food and drink", "Read magic", "Stabilize", "Touch of fatigue" };
+	private String[] availableFirstLevelSpells = new String[] { "Bless", "Burning hands", "Cause fear", "Command", "Comprehend languages", "Cure light wounds", "Detect chaos", "Detect evil", "Detect good", "Detect law", "Endure elements",
+			"Obscuring mist", "Protection from chaos", "Protection from evil", "Protection from good", "Protection from law", "Sleep" };
 	
 	public Adept() {
 		super("Adept");

@@ -154,15 +154,20 @@ public class NPC {
 		statBlock += "Feats:" + feats + "\n";
 		
 		if (!coreClass.getCantrips().isEmpty()) {
-			statBlock += "Cantrips:" + coreClass.getCantrips() + "\n";
+			statBlock += "Cantrips (DC" + (10 + wisdomMod) + "):" + coreClass.getCantrips() + "\n";
+			if (wisdom < 10) {
+				statBlock += "*You lack the wisdom to prepare or cast cantrips.\n";
+			}
 		}
 		
 		if (!coreClass.getFirstLevelSpells().isEmpty()) {
-			
 			if (wisdomMod > 0) {
-				statBlock += "1st level Spells (2/day):" + coreClass.getFirstLevelSpells() + "\n";
-			} else if (wisdomMod == 0) {
-				statBlock += "1st level Spells (1/day):" + coreClass.getFirstLevelSpells() + "\n";
+				statBlock += "1st level Spells (DC" + (11 + wisdomMod) + " 2/day):" + coreClass.getFirstLevelSpells() + "\n";
+			} else if (wisdomMod <= 0) {
+				statBlock += "1st level Spells (DC" + (11 + wisdomMod) + " 1/day):" + coreClass.getFirstLevelSpells() + "\n";
+			}
+			if (wisdom < 11) {
+				statBlock += "*You lack the wisdom to prepare or cast 1st level spells.\n";
 			}
 		}
 		

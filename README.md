@@ -25,4 +25,4 @@ Drunk Pathfinder Rules!
 * Dungeon not included.
 
 Examples
-https://pastebin.com/gsmPWR8a
+https://pastebin.com/n0efFEk5

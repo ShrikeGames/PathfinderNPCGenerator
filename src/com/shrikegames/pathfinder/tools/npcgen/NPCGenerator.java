@@ -11,7 +11,7 @@ public class NPCGenerator {
 		for (int i = 0; i < 50; i++) {
 			NPC npc = new NPC(CharacterUtils.randomCoreRace(), CharacterUtils.randomCoreClass());
 			System.out.println(npc);
-			
+			System.out.println("---------------------------------");
 		}
 		
 	}
