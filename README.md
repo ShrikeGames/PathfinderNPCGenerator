@@ -20,4 +20,4 @@ Drunk Pathfinder Rules!
 * Oh and did I mention you go spawn with no equipment at all? Have fun punching things to death until you find some!
 
 Examples
-https://pastebin.com/MWrw4Dcs
+https://pastebin.com/gsmPWR8a

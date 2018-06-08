@@ -44,8 +44,22 @@ public class HalfOrc extends CoreRace {
 				break;
 		}
 		
-		maleFirstNames = new String[] { "Ausk", "Davor", "Hakak", "Kizziar", "Makoa", "Nesteruk", "Tsadok" };
-		femaleFirstNames = new String[] { "Canan", "Drogheda", "Goruza", "Mazon", "Shirish", "Tevaga", "Zeljka" };
+		maleFirstNames = new String[] { "Ausk", "Davor", "Hakak", "Kizziar", "Makoa", "Nesteruk", "Tsadok", "Gramanars", "Kuruz", "Hononur", "Mugad", "Garegall", "Tharezar", "Asidak", "Nutur", "Orazur", "Agguz", "Dedash", "Sudak", "Thramar",
+				"Urthidim", "Zasadall", "Borotir", "Honugar", "Makomur", "Muken", "Zarirsh", "Uramar", "Malaglar", "Gromudar", "Kulorimm", "Dorurash", "Grersh", "Gromadak", "Koragur", "Arnegash", "Kuroburk", "Zavudar", "Lumobash", "Sagur", "Ronerim",
+				"Ronobar", "Cutur", "Gorumash", "Orodar", "Trakun", "Kalagul", "Haronur", "Olligar", "Tedark", "Arorsh", "Hururash", "Huran", "Han", "Baregall", "Dradall", "Kilask", "Sororth", "Crarak", "Karabur", "Dogak", "Zarugall", "Atamar",
+				"Ullugar", "Rekiburk", "Damash", "Zevag", "Zurugur", "Atrurall", "Tog", "Mukumir", "Tanunars", "Haz", "Kuludall", "Nudur", "Durozar", "Tagur", "Mogun", "Brakedurk", "Gugar", "Urthagak", "Ulluruk", "Drabar", "Haragur", "Thararsh",
+				"Makunars", "Zoridash", "Thudash", "Zaug", "Tharomir", "Thamir", "Gramodark", "Duranars", "Mukabark", "Gnaodar", "Hagid", "Gorumir", "Asagak", "Ged", "Hagin", "Dorurimm", "Oguuz", "Zavonars", "Zusurth", "Trukozur", "Therabash",
+				"Brumar", "Ugobak", "Grimutar", "Ukragall", "Gnaurash", "Zusudark", "Tharomak", "Kometar", "Ronaubash", "Bom", "Agubark", "Therarimm", "Hunazall", "Baretir", "Garomar", "Zasodim", "Zusitir", "Grimorash", "Ronubar", "Gotorsh",
+				"Trukidurk", "Makobash", "Throgark", "Grudall", "Mokuzur", "Urtrask", "Saroburk", "Atrunur", "Mugudak", "Mugemur", "Urthorth", "Hanebar", "Dorigar", "Kaburk", "Makirall", "Theragar", "Thrim", "Urobur", "Gorurim", "Kurumak", "Grutir",
+				"Zurudak", "Ronaugak", "Aggutir", "Durotur", "Grimibar", "Zamak", "Mukatir", "Mahlunar", "Magagash", "Honedur" };
+		femaleFirstNames = new String[] { "Canan", "Drogheda", "Goruza", "Mazon", "Shirish", "Tevaga", "Zeljka", "Kotitah", "Sunotur", "Tamoti", "Gajezara", "Gryugu", "Shayigh", "Ootedar", "Rawenir", "Gariner", "Rasimira", "Rohketi", "Shugu",
+				"Kotagum", "Nasha", "Fulenchu", "Lageri", "Senetar", "Shone", "Ootemira", "Brud", "Sunigur", "Ubagume", "Merami", "Kategu", "Ekosha", "Zenogar", "Aruner", "Zenonar", "Folomira", "Gyniral", "Meritur", "Seniki", "Kerari", "Sotur",
+				"Umagume", "Sumagur", "Rohkasha", "Sumodar", "Gijoki", "Sinogar", "Falonur", "Ketuki", "Temagar", "Rohed", "Sanomira", "Felani", "Rahodur", "Tuomur", "Tamagu", "Umunur", "Zunezura", "Ubaz", "Rashinir", "Mirida", "Karadar", "Tumaner",
+				"Puyuwar", "Rohome", "Sanatar", "Zaniz", "Tuidar", "Ruz", "Samanur", "Rohunar", "Puyimi", "Gryoda", "Sanitir", "Kurinar", "Bruzura", "Kutonar", "Sanogar", "Tumome", "Gryirel", "Merari", "Fulonchu", "Kotidar", "Tamigum", "Rawerook",
+				"Samatah", "Sozar", "Rasugume", "Nimi", "Rohkesh", "Groner", "Temashi", "Sanedar", "Folini", "Areme", "Uminir", "Ekosha", "Gagri", "Rahamira", "Rasimar", "Karoti", "Gyninchu", "Koterook", "Gorori", "Saminar", "Karamar", "Ketuki",
+				"Karozur", "Shayene", "Elotur", "Zenonur", "Zonome", "Sumogume", "Puyemar", "Rashishi", "Kiregur", "Sinanchu", "Gajogri", "Gorook", "Moradur", "Rinchu", "Katitur", "Tuagum", "Alinur", "Gazar", "Folati", "Goruwar", "Sinidar",
+				"Ketozara", "Elegum", "Falezura", "Tumazura", "Kirizira", "Meragum", "Nagu", "Tumig", "Zenagume", "Gijugum", "Sinogume", "Ekotur", "Gijada", "Urod", "Gijome", "Zoninur", "Mirishi", "Ekadur", "Rohigri", "Katotur", "Zanini", "Zenazara",
+				"Kirimi", "Falarook", "Gajome", "Bridar", "Feligh", "Temotah", "Briwar" };
 	}
 	
 	@Override
