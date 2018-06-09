@@ -42,6 +42,8 @@ public class CharacterUtils {
 	private static ArrayList<Feat> feats = new ArrayList<Feat>();
 	
 	private static String[] genders = new String[] { "Male", "Female", "Other" };
+	private static String[] professions = new String[] { "architect", "Baker", "Barrister", "Brewer", "Butcher", "Clerk", "Cook", "Courtesan", "Driver", "Engineer", "Farmer", "Fisherman", "Gambler", "Gardener", "Herbalist", "Innkeeper", "Librarian",
+			"Merchant", "Midwife", "Miller", "Miner", "Porter", "Sailor", "Scribe", "Shepherd", "Stable master", "Soldier", "Tanner", "Trapper", "Woodcutter" };
 	
 	public static Feat randomFeat() {
 		if (feats.isEmpty()) {
@@ -201,5 +203,10 @@ public class CharacterUtils {
 	public static Alignment randomAlignment() {
 		int random = (int) (Math.random() * Alignment.values().length);
 		return Alignment.values()[random];
+	}
+	
+	public static String randomProfession() {
+		int random = (int) (Math.random() * professions.length);
+		return professions[random];
 	}
 }

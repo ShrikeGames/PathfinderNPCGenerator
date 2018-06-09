@@ -16,6 +16,7 @@ public class NPC {
 	private String gender;
 	private String height;
 	private String weight;
+	private String profession;
 	
 	private int health;
 	private int strength;
@@ -66,6 +67,7 @@ public class NPC {
 		lastName = coreRace.getLastName(gender);
 		height = coreRace.getRandomHeight(gender);
 		weight = coreRace.getRandomWeight(gender);
+		profession = CharacterUtils.randomProfession();
 		
 		drawbacks = new ArrayList<Drawback>();
 		
@@ -124,6 +126,7 @@ public class NPC {
 		statBlock += "Height:" + height + "\n";
 		statBlock += "Weight:" + weight + "\n";
 		statBlock += "Class:" + coreClass.getName() + "\n";
+		statBlock += "Profession:" + profession + "\n";
 		statBlock += "HP:" + health + "\n";
 		statBlock += "AC:" + ac + "\n";
 		statBlock += "Touch AC:" + touchAC + "\n";
